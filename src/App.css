@@ -216,23 +216,23 @@ body {
    }
 
   .movie--details img {
-    width:70%;
+    width:60%;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
   .btn--delete {
     position: relative;
     bottom: 5px;
-    right:40px;
-    width: 80%;
+    width: 100%;
     text-align: center;
-    margin: 20px;
+    margin: 20px 10px;
 
    }
 
    .movie--details {
-    width: 80%;
     display: flex;
     flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
    }
   .navbar ul{
     margin-right: 25px;
