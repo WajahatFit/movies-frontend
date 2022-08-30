@@ -7,7 +7,7 @@ export default function Card({data}) {
     {!data && <p>loading--</p>}
     {data && data.map(movie => {
       return (
-        <div key={movie._id}>
+        <div key={movie._id} className='card--container'>
         <h3 className='card--title'><Link to={`/movies/${movie._id}`}>{movie.title}</Link></h3>
         <Link to={`/movies/${movie._id}`}><img className='card--img' src={movie.image} alt={movie.title} /></Link> 
           

@@ -11,7 +11,7 @@ export default function Form() {
         director:'',
         duration:'',
         synopsis:'',
-        image:'',
+        image:''
     })
     const handleChange = (e) => {
         const { name, value, type } = e.target;
@@ -42,7 +42,7 @@ export default function Form() {
             <input type='number' name='duration' value={form.number} placeholder='Movie duration' onChange={handleChange}/>
             <input type='text' name='synopsis' value={form.synopsis} placeholder='Movie synopsis' onChange={handleChange}/>
             <input type='text' name='image' value={form.image} placeholder='Movie image url' onChange={handleChange}/>
-            <button>Create</button>
+            <button className='form--btn'>Create</button>
         </form>
     </div>
   )

@@ -5,6 +5,7 @@ import axios from 'axios';
 
 export default function Edit() {
   const params = useParams();
+  const navigate = useNavigate();
   const { id } = params;
   const [movie, setMovie] = useState(null)
   useEffect(() => {
@@ -16,15 +17,15 @@ export default function Edit() {
       } catch (error) {
         console.error(error)
       }
-      
     }
     getData()
-  }, [id])
+  }, [id]);
 
   return (
     <div>
       <h2>Edit movie</h2>
-      <Form />
+      <Form setMovie={setMovie}/>
+
       {/* Should display a form with the data previously incorporated and when saved, send the
       changes to the database. Then it should redirect to the Home ('/') */}
     </div>

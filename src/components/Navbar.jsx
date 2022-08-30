@@ -10,8 +10,8 @@ export default function Navbar() {
     
     <div className='navbar'>
       <ul>
-        <li><NavLink to='/'  className={(element) => element.isActive ? 'selected' : 'not'}>Home</NavLink></li>
-        <li><NavLink to='/new' className={(element) => element.isActive ? 'selected' : 'not'}>New</NavLink></li>
+        <li className='li'><NavLink to='/'  className={(element) => element.isActive ? 'form--btn' : 'not'}>Home</NavLink></li>
+        <li className='li'><NavLink to='/new' className={(element) => element.isActive ? 'form--btn' : 'not'}>New</NavLink></li>
 
         <button onClick={() => navigate(-1)}>Go back</button>
       </ul>
