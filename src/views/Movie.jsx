@@ -43,9 +43,8 @@ export default function Movie() {
           <p><span>Duration:</span> {movie.duration}h</p>
           <p><span>Synopsis:</span> {movie.synopsis}</p>
           <img src={movie.image} alt={movie.title}></img>
-          
+          <button className='btn--delete' onClick={handleDelete}>Delete movie</button>
         </div>)}
-        {movie && <button className='btn--delete' onClick={handleDelete}>Delete movie</button>}
 
        
       {/* Should have a delete button to delete the movie and then redirect to the Home */}
