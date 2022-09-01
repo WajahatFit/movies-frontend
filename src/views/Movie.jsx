@@ -44,6 +44,7 @@ export default function Movie() {
           <p><span>Synopsis:</span> {movie.synopsis}</p>
           <img src={movie.image} alt={movie.title}></img>
           <button className='btn--delete' onClick={handleDelete}>Delete movie</button>
+          <button className='btn--edit' onClick={() => navigate(`/edit/${id}`)}>Edit movie</button>
         </div>)}
 
        
