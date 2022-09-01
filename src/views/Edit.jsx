@@ -38,7 +38,6 @@ const handleSubmit = async(e) => {
   e.preventDefault();
   try {
       const newMovie = await axios.put(`http://localhost:8000/api/v1/movies/${id}`, movie);
-      console.log(newMovie)
       navigate(`/`)
     } catch (error) {
       console.error(error);

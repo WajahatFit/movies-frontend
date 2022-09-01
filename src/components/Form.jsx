@@ -27,7 +27,7 @@ export default function Form() {
         e.preventDefault();
         try {
             const newMovie = await axios.post('http://localhost:8000/api/v1/movies', form);
-            console.log(newMovie)
+            
             navigate(`/movies/${newMovie.data.data._id}`)
           } catch (error) {
             console.error(error);
